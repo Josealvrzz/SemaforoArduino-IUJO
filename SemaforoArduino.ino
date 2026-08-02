@@ -39,4 +39,23 @@ void loop() {
   digitalWrite(peatonRojoEO, HIGH);
 
   delay(2000);
+
+  digitalWrite(cocheAmarilloNS, LOW);
+  digitalWrite(cocheRojoNS, HIGH);
+  digitalWrite(peatonVerdeNS, HIGH);
+  digitalWrite(peatonRojoNS, LOW);
+
+  digitalWrite(cocheVerdeEO, HIGH);
+  digitalWrite(cocheRojoEO, LOW);
+
+  delay(5000);
+
+  digitalWrite(cocheVerdeEO, LOW);
+  digitalWrite(cocheAmarilloEO, HIGH);
+  digitalWrite(peatonVerdeNS, LOW);
+  digitalWrite(peatonRojoNS, HIGH);
+
+  delay(2000);
+
+  digitalWrite(cocheAmarilloEO, LOW);
 }

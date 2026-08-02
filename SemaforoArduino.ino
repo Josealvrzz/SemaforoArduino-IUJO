@@ -11,3 +11,9 @@ const int cocheAmarilloEO = 8;
 const int cocheRojoEO = 9;
 const int peatonVerdeEO = 10;
 const int peatonRojoEO = 11;
+
+void setup() {
+  for (int i = 2; i <= 11; i++) {
+    pinMode(i, OUTPUT);
+  }
+}

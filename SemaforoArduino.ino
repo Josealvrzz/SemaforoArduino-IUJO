@@ -17,3 +17,26 @@ void setup() {
     pinMode(i, OUTPUT);
   }
 }
+
+void loop() {
+  digitalWrite(cocheVerdeNS, HIGH);
+  digitalWrite(cocheAmarilloNS, LOW);
+  digitalWrite(cocheRojoNS, LOW);
+  digitalWrite(peatonVerdeNS, LOW);
+  digitalWrite(peatonRojoNS, HIGH);
+
+  digitalWrite(cocheVerdeEO, LOW);
+  digitalWrite(cocheAmarilloEO, LOW);
+  digitalWrite(cocheRojoEO, HIGH);
+  digitalWrite(peatonVerdeEO, HIGH);
+  digitalWrite(peatonRojoEO, LOW);
+
+  delay(5000);
+
+  digitalWrite(cocheVerdeNS, LOW);
+  digitalWrite(cocheAmarilloNS, HIGH);
+  digitalWrite(peatonVerdeEO, LOW);
+  digitalWrite(peatonRojoEO, HIGH);
+
+  delay(2000);
+}
